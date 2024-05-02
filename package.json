@@ -1,5 +1,5 @@
 {
-	"name": "markdown-composer",
+	"name": "markdown-note-refactor",
 	"displayName": "markdown_refactor",
 	"description": "markdown_refactor",
 	"version": "0.0.1",
@@ -14,15 +14,15 @@
 	"contributes": {
 		"commands": [
 			{
-				"command": "markdown-composer.helloWorld",
+				"command": "markdown-note-refactor.helloWorld",
 				"title": "Hello World"
 			},
 			{
-				"command": "markdown-composer.make-note",
+				"command": "markdown-note-refactor.make-note",
 				"title": "Make Note"
 			},
 			{
-				"command": "markdown-composer.read-note",
+				"command": "markdown-note-refactor.read-note",
 				"title": "Read Note"
 			}
 		]

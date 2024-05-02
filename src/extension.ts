@@ -8,19 +8,19 @@ export function activate(context: vscode.ExtensionContext) {
 
 	// Use the console to output diagnostic information (console.log) and errors (console.error)
 	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "markdown-composer" is now active!');
+	console.log('Congratulations, your extension "markdown-note-refactor" is now active!');
 
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with registerCommand
 	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('markdown-composer.helloWorld', () => {
+	let disposable = vscode.commands.registerCommand('markdown-note-refactor.helloWorld', () => {
 		// The code you place here will be executed every time your command is executed
 		// Display a message box to the user
 		vscode.window.showInformationMessage('Hello World from markdown_refactor!');
 	});
 
 	// make note command
-	let makenote = vscode.commands.registerCommand('markdown-composer.make-note', () => {
+	let makenote = vscode.commands.registerCommand('markdown-note-refactor.make-note', () => {
 		
 		// get workspace folder
 		let folders = vscode.workspace.workspaceFolders;
@@ -70,7 +70,7 @@ export function activate(context: vscode.ExtensionContext) {
 	
 
 	// read note command
-	let readnote = vscode.commands.registerCommand('markdown-composer.read-note', () => {
+	let readnote = vscode.commands.registerCommand('markdown-note-refactor.read-note', () => {
 
 		// get active text editor
 		let editor = vscode.window.activeTextEditor;

@@ -1,6 +1,6 @@
-# markdown-composer README
+# markdown-note-refactor README
 
-This is the README for your extension "markdown-composer". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "markdown-note-refactor". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 
