@@ -1,7 +1,7 @@
 {
 	"name": "markdown-note-refactor",
-	"displayName": "markdown_refactor",
-	"description": "markdown_refactor",
+	"displayName": "markdown refactor",
+	"description": "markdown refactor",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.88.0"
@@ -18,14 +18,30 @@
 				"title": "Hello World"
 			},
 			{
-				"command": "markdown-note-refactor.make-note",
-				"title": "Make Note"
-			},
-			{
-				"command": "markdown-note-refactor.read-note",
-				"title": "Read Note"
+				"command": "markdown-note-refactor.run-note-refactor",
+				"title": "Run Note Refactor"
 			}
-		]
+		],
+		"configuration":{
+			"title": "Markdown Refactor",
+			"properties": {
+				"markdown-note-refactor.insertHeader":{
+					"type": "string",
+					"default": "---\ntype = basic-note\n---\n\n",
+					"description": "Insert Header"					
+				},
+				"markdown-note-refactor.makeNoteDir":{
+					"type": "string",
+					"default": "/notes",
+					"description": "Make Note Directory"
+				},
+				"markdown-note-refactor.headerSize":{
+					"type": "number",
+					"default": 2,
+					"description": "Header Size"
+				}
+			}
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
