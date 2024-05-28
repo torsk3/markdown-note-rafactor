@@ -1,71 +1,57 @@
-# markdown-note-refactor README
+# Markdown Note Refactor for VS Code
 
-This is the README for your extension "markdown-note-refactor". After writing up a brief description, we recommend including the following sections.
+Markdown Note Refactor is a Visual Studio Code extension that aims to streamline the process of managing and organizing markdown files. This tool allows users to automatically split sections of a markdown file into separate files based on h2 headers and link them together for easy navigation. Inspired by the Obsidian community plugin [note-refactor-obsidian](https://github.com/lynchjames/note-refactor-obsidian), this extension brings similar functionality to VS Code, enhancing productivity for writers, developers, and note-takers working with markdown files.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- **Automated Section Splitting**: Splits the currently opened markdown file into sections based on h2 headers, each becoming its own separate file.
+- **Dynamic File Generation**: Automatically generates new markdown files using the h2 header titles as filenames, placed in a specified directory.
+- **Content Duplication**: Copies the text within the original file's sections into the corresponding new markdown files.
+- **Link Creation**: Inserts wiki-style links in the original file that point to the newly created files, facilitating easy navigation between them.
 
-For example if there is an image subfolder under your extension project workspace:
+## Getting Started
 
-\!\[feature X\]\(images/feature-x.png\)
+### Prerequisites
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+Ensure you have the following installed before you start using Markdown Note Refactor:
 
-## Requirements
+- Visual Studio Code
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+### Installation
 
-## Extension Settings
+To install Markdown Note Refactor:
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+#### From the VS Code Extensions Marketplace
 
-For example:
+1. Open Visual Studio Code.
+1. Go to the Extensions view by clicking on the square icon on the sidebar or pressing *Ctrl+Shift+X*.
+1. Search for "Markdown Note Refactor" and click on the install button.
 
-This extension contributes the following settings:
+#### From a VSIX File
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+1. Clone or download this repository.
+1. In Visual Studio Code, open the Extensions view (*Ctrl+Shift+X*).
+1. Click on the ... menu at the top-right corner and select *Install from VSIX....*
+1. Locate and select the *.vsix* file that you downloaded or built.
 
-## Known Issues
+### Usage
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+To use Markdown Note Refactor:
 
-## Release Notes
+1. Open the markdown file you wish to refactor in VS Code.
+1. Press *Ctrl+Shift+P* to open the Command Palette.
+1. Type *Markdown Note Refactor: Refactor and Link Sections* and press Enter.
 
-Users appreciate release notes as you update your extension.
+The extension will then process the current file, creating new markdown files for each h2 section and updating the original file with links to these new documents.
 
-### 1.0.0
+## Contributing
 
-Initial release of ...
+Your contributions make the open-source community a fantastic place for growth, inspiration, and creativity. If you have suggestions for improving Markdown Note Refactor, please fork the repo, create a pull request, or open an issue with the tag "enhancement". Contributions of all kinds are welcome!
 
-### 1.0.1
+## License
 
-Fixed issue #.
+This project is licensed under the MIT License - see the *LICENSE* file for details.
 
-### 1.1.0
+## Acknowledgments
 
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Special thanks to [note-refactor-obsidian](https://github.com/lynchjames/note-refactor-obsidian) for the inspiration behind this extension.

@@ -1,7 +1,7 @@
 {
 	"name": "markdown-note-refactor",
-	"displayName": "markdown refactor",
-	"description": "markdown refactor",
+	"displayName": "markdown note refactor",
+	"description": "markdown note refactor",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.88.0"
@@ -14,31 +14,27 @@
 	"contributes": {
 		"commands": [
 			{
-				"command": "markdown-note-refactor.helloWorld",
-				"title": "Hello World"
-			},
-			{
 				"command": "markdown-note-refactor.run-note-refactor",
-				"title": "Run Note Refactor"
+				"title": "Markdown Note Refactor: Refactor and Link Sections"
 			}
 		],
 		"configuration":{
-			"title": "Markdown Refactor",
+			"title": "Markdown Note Refactor",
 			"properties": {
 				"markdown-note-refactor.insertHeader":{
 					"type": "string",
 					"default": "---\ntype = basic-note\n---\n\n",
-					"description": "Insert Header"					
+					"description": "Header settings for newly created notes."					
 				},
 				"markdown-note-refactor.makeNoteDir":{
 					"type": "string",
 					"default": "/notes",
-					"description": "Make Note Directory"
+					"description": "Setting the output directory for notes after refactoring."
 				},
 				"markdown-note-refactor.headerSize":{
 					"type": "number",
 					"default": 2,
-					"description": "Header Size"
+					"description": "Header size to split the note. (If 2, split by ##)"
 				}
 			}
 		}
