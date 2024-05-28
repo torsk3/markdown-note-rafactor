@@ -39,6 +39,10 @@
 			}
 		}
 	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/torsk3/markdown-note-rafactor.git"
+	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
