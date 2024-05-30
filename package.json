@@ -1,5 +1,6 @@
 {
 	"name": "markdown-note-refactor",
+	"publisher": "torsk3",
 	"displayName": "markdown note refactor",
 	"description": "markdown note refactor",
 	"version": "0.0.1",
@@ -23,8 +24,8 @@
 			"properties": {
 				"markdown-note-refactor.insertHeader":{
 					"type": "string",
-					"default": "---\ntype = basic-note\n---\n\n",
-					"description": "Header settings for newly created notes."					
+					"default": "---<br>type: basic-note<br>---<br><br>",
+					"description": "Header settings for newly created notes. if you want to use break line, use <br>."					
 				},
 				"markdown-note-refactor.makeNoteDir":{
 					"type": "string",

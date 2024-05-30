@@ -43,6 +43,11 @@ export function activate(context: vscode.ExtensionContext) {
 
     // set from config
     let insertHeader = config.get<string>("insertHeader");
+
+    if(insertHeader){
+      insertHeader = insertHeader.replace(/<br>/g, '\n');
+    }
+
     // get workspace folder uri
     let folderUri = folders[0].uri;
     let directory = config.get<string>("makeNoteDir");
